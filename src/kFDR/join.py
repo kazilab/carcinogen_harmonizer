@@ -11,7 +11,7 @@ def t_test_fold(t_value, p_value, X1_av, X2_av, fold, labels):
     p_valueD.columns = ['p-value']
     X1_avD = pd.DataFrame(X1_av)
     X1_avD.columns = ['Group 1 average']
-    X2_avD = pd.DataFrame(X1_av)
+    X2_avD = pd.DataFrame(X2_av)
     X2_avD.columns = ['Group 2 average']
     foldD = pd.DataFrame(fold)
     foldD.columns = ['fold']
@@ -26,7 +26,7 @@ def t_test_fold_plus(t_value, p_value, X1_av, X2_av, fold, data):
     p_valueD.columns = ['p-value']
     X1_avD = pd.DataFrame(X1_av)
     X1_avD.columns = ['Group 1 average']
-    X2_avD = pd.DataFrame(X1_av)
+    X2_avD = pd.DataFrame(X2_av)
     X2_avD.columns = ['Group 2 average']
     foldD = pd.DataFrame(fold)
     foldD.columns = ['fold']
