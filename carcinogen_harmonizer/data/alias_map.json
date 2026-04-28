@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "description": "External-source-backed aliases used to turn short carcinogen IDs or abbreviations into PubChem-resolvable query names.",
+    "generated_from": "PubChem PUG REST compound name lookups",
+    "primary_source": "PubChem",
+    "primary_source_url": "https://pubchem.ncbi.nlm.nih.gov/",
+    "retrieved_on": "2026-04-28",
+    "source_policy": "Entries must be backed by a recognized external chemical database record; local seed files are not used as authority for this map."
+  },
+  "aliases": {
+    "4ABP": {
+      "preferred_query_name": "4-Aminobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "7102",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/7102"
+      }
+    },
+    "4_HNE": {
+      "preferred_query_name": "4-hydroxy-2-nonenal",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "5283344",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5283344"
+      }
+    },
+    "AFB1": {
+      "preferred_query_name": "Aflatoxin B1",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "186907",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/186907"
+      }
+    },
+    "As": {
+      "preferred_query_name": "arsenic",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "5359596",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5359596"
+      }
+    },
+    "BaP": {
+      "preferred_query_name": "Benzo[a]pyrene",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "2336",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2336"
+      }
+    },
+    "Be": {
+      "preferred_query_name": "beryllium",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "5460467",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5460467"
+      }
+    },
+    "Cd": {
+      "preferred_query_name": "cadmium",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "23973",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/23973"
+      }
+    },
+    "CrVI": {
+      "preferred_query_name": "chromium(VI)",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "29131",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/29131"
+      }
+    },
+    "DDE": {
+      "preferred_query_name": "p,p'-DDE",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "3035",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/3035"
+      }
+    },
+    "DHT": {
+      "preferred_query_name": "5 alpha dihydrotestosterone",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "10635",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10635"
+      }
+    },
+    "DMBA": {
+      "preferred_query_name": "7,12-dimethylbenz[a]anthracene",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "6001",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6001"
+      }
+    },
+    "E2": {
+      "preferred_query_name": "17 beta estradiol",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "5757",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5757"
+      }
+    },
+    "HCB": {
+      "preferred_query_name": "hexachlorobenzene",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "8370",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/8370"
+      }
+    },
+    "MDA": {
+      "preferred_query_name": "malondialdehyde",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "10964",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/10964"
+      }
+    },
+    "MNU": {
+      "preferred_query_name": "N-methyl-N-nitrosourea",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "12699",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/12699"
+      }
+    },
+    "MeIQx": {
+      "preferred_query_name": "2-amino-3,8-dimethylimidazo[4,5-f]quinoxaline",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "62275",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/62275"
+      }
+    },
+    "NDEA": {
+      "preferred_query_name": "N-nitrosodiethylamine",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "5921",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/5921"
+      }
+    },
+    "NDMA": {
+      "preferred_query_name": "N-nitrosodimethylamine",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "6124",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6124"
+      }
+    },
+    "NNK": {
+      "preferred_query_name": "4-(methylnitrosamino)-1-(3-pyridyl)-1-butanone",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "47289",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/47289"
+      }
+    },
+    "Ni": {
+      "preferred_query_name": "nickel",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "935",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/935"
+      }
+    },
+    "PCB_118": {
+      "preferred_query_name": "2,3',4,4',5-pentachlorobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "35823",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/35823"
+      }
+    },
+    "PCB_126": {
+      "preferred_query_name": "3,3',4,4',5-pentachlorobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "63090",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/63090"
+      }
+    },
+    "PCB_138": {
+      "preferred_query_name": "2,2',3,4,4',5'-hexachlorobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "37035",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/37035"
+      }
+    },
+    "PCB_153": {
+      "preferred_query_name": "2,2',4,4',5,5'-hexachlorobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "37034",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/37034"
+      }
+    },
+    "PCB_169": {
+      "preferred_query_name": "3,3',4,4',5,5'-hexachlorobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "36231",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/36231"
+      }
+    },
+    "PCB_77": {
+      "preferred_query_name": "3,3',4,4'-tetrachlorobiphenyl",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "36187",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/36187"
+      }
+    },
+    "PCE": {
+      "preferred_query_name": "tetrachloroethylene",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "31373",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/31373"
+      }
+    },
+    "PCP": {
+      "preferred_query_name": "pentachlorophenol",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "992",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/992"
+      }
+    },
+    "PeCDF_23478": {
+      "preferred_query_name": "2,3,4,7,8-pentachlorodibenzofuran",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "42128",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/42128"
+      }
+    },
+    "PhIP": {
+      "preferred_query_name": "2-amino-1-methyl-6-phenylimidazo[4,5-b]pyridine",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "1530",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/1530"
+      }
+    },
+    "TCDD": {
+      "preferred_query_name": "2,3,7,8-tetrachlorodibenzo-p-dioxin",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "15625",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/15625"
+      }
+    },
+    "TCE": {
+      "preferred_query_name": "trichloroethylene",
+      "source": {
+        "database": "PubChem",
+        "record_type": "Compound",
+        "cid": "6575",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/6575"
+      }
+    }
+  }
+}

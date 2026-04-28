@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carcinogen-harmonizer"
+version = "0.4.0"
+description = "Reproducible carcinogen harmonization, enrichment, validation, and graph export"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "requests>=2.31",
+  "pyyaml>=6.0",
+  "lxml>=4.9",
+  "openpyxl>=3.1",
+]
+keywords = ["carcinogen", "harmonization", "toxicology", "cheminformatics", "knowledge-graph"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+app = ["streamlit>=1.35"]
+
+[project.scripts]
+carcinogen-harmonizer = "carcinogen_harmonizer.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+carcinogen_harmonizer = ["data/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["carcinogen_harmonizer*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

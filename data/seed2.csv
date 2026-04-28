@@ -1,0 +1,57 @@
+node_id,node_label,node_type,carcinogen_class,iarc,Status,Version
+4ABP,4-Aminobiphenyl,Carcinogen,Aromatic_Amine,Group 1,1,0
+AFB1,Aflatoxin B1,Carcinogen,Mycotoxin,Group 1,1,0
+BaP,Benzo[a]pyrene,Carcinogen,PAH,Group 1,1,0
+Benzene,Benzene,Carcinogen,Solvent,Group 1,1,0
+Benzidine,Benzidine,Carcinogen,Aromatic_Amine,Group 1,1,0
+E2,17beta-Estradiol,Carcinogen,Estrogen,Group 1,1,0
+EthyleneOxide,Ethylene Oxide,Carcinogen,Alkylating,Group 1,1,0
+NNK,NNK,Carcinogen,Nitrosamine,Group 1,1,0
+VinylChloride,Vinyl Chloride,Carcinogen,Solvent,Group 1,1,0
+Acetaldehyde,Acetaldehyde,Carcinogen,Aldehyde,Group 1,1,1
+As,Arsenic (inorganic),Carcinogen,Heavy_Metal,Group 1,1,1
+Be,Beryllium,Carcinogen,Heavy_Metal,Group 1,1,1
+Busulfan,Busulfan,Carcinogen,Alkylating,Group 1,1,1
+Cd,Cadmium,Carcinogen,Heavy_Metal,Group 1,1,1
+Chlorambucil,Chlorambucil,Carcinogen,Alkylating,Group 1,1,1
+CrVI,Chromium (VI),Carcinogen,Heavy_Metal,Group 1,1,1
+Cyclophosphamide,Cyclophosphamide,Carcinogen,Alkylating,Group 1,1,1
+Formaldehyde,Formaldehyde,Carcinogen,Aldehyde,Group 1,1,1
+Lindane,Lindane (γ-HCH),Carcinogen,Organochlorine,Group 1,1,1
+Ni,Nickel compounds,Carcinogen,Heavy_Metal,Group 1,1,1
+PCB_118,PCB 118,Carcinogen,PCB,Group 1,1,1
+PCB_126,PCB 126,Carcinogen,PCB,Group 1,1,1
+PCB_138,PCB 138,Carcinogen,PCB,Group 1,1,1
+PCB_153,PCB 153,Carcinogen,PCB,Group 1,1,1
+PCB_169,PCB 169,Carcinogen,PCB,Group 1,1,1
+PCB_77,PCB 77,Carcinogen,PCB,Group 1,1,1
+PCP,Pentachlorophenol (PCP),Carcinogen,Organochlorine,Group 1,1,1
+PeCDF_23478,"2,3,4,7,8-PeCDF",Carcinogen,Dioxin,Group 1,1,1
+Sulfur_mustard,Sulfur mustard,Carcinogen,Alkylating,Group 1,1,1
+TCDD,TCDD,Carcinogen,Dioxin,Group 1,1,1
+TCE,TCE,Carcinogen,Chlorinated_Solvent,Group 1,1,1
+Ethanol,Ethanol,Carcinogen,Alcohol,Group 1 (alcoholic beverages),1,1
+DHT,5a-DHT,Carcinogen,Androgen,Group 2A,1,0
+DMBA,DMBA,Carcinogen,PAH,Group 2A,1,0
+NDMA,NDMA,Carcinogen,Nitrosamine,Group 2A,1,0
+Testosterone,Testosterone,Carcinogen,Androgen,Group 2A,1,0
+Acrolein,Acrolein,Carcinogen,Aldehyde,Group 2A,1,1
+Acrylamide,Acrylamide,Carcinogen,Alkylating,Group 2A,1,1
+DDT,DDT,Carcinogen,Organochlorine,Group 2A,1,1
+MNU,MNU (N-methyl-N-nitrosourea),Carcinogen,Alkylating,Group 2A,1,1
+NDEA,NDEA,Carcinogen,Nitrosamine,Group 2A,1,1
+PCE,PCE,Carcinogen,Chlorinated_Solvent,Group 2A,1,1
+Temozolomide,Temozolomide,Carcinogen,Alkylating,Group 2A,1,1
+Urethane,Urethane (ethyl carbamate),Carcinogen,Alcohol,Group 2A,1,1
+Glycidamide,Glycidamide,Carcinogen,Alkylating,Group 2A (as ultimate acrylamide metabolite),1,1
+MeIQx,MeIQx,Carcinogen,HCA,Group 2B,1,0
+PhIP,PhIP,Carcinogen,HCA,Group 2B,1,0
+Chlordane,Chlordane (technical),Carcinogen,Organochlorine,Group 2B,1,1
+Crotonaldehyde,Crotonaldehyde,Carcinogen,Aldehyde,Group 2B,1,1
+DDE,"p,p'-DDE",Carcinogen,Organochlorine,Group 2B,1,1
+HCB,Hexachlorobenzene (HCB),Carcinogen,Organochlorine,Group 2B,1,1
+Heptachlor,Heptachlor,Carcinogen,Organochlorine,Group 2B,1,1
+Toxaphene,Toxaphene,Carcinogen,Organochlorine,Group 2B,1,1
+Furfural,Furfural,Carcinogen,Aldehyde,Group 3,1,1
+4_HNE,4-Hydroxynonenal (4-HNE),Carcinogen,Aldehyde,Not classified (endogenous genotoxin),1,1
+MDA,Malondialdehyde (MDA),Carcinogen,Aldehyde,Not classified (endogenous genotoxin),1,1

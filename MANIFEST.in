@@ -1,0 +1,7 @@
+exclude .DS_Store
+recursive-exclude * __pycache__ *.py[cod] .DS_Store
+prune build
+prune dist
+prune cache
+prune outputs
+prune carcinogen_harmonizer.egg-info

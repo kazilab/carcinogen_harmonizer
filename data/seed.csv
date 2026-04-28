@@ -1,0 +1,3 @@
+node_id,node_label,node_type,carcinogen_class,iarc,Status,Version
+4ABP,4-Aminobiphenyl,Carcinogen,Aromatic_Amine,Group 1,1,0
+AFB1,Aflatoxin B1,Carcinogen,Mycotoxin,Group 1,1,0

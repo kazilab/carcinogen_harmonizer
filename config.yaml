@@ -1,0 +1,51 @@
+# Default configuration for the carcinogen enrichment pipeline.
+# The pipeline works with only a seed CSV and internet access for PubChem.
+# Other sources are loaded from local files when supplied.
+
+pubchem:
+  enabled: true
+  rate_limit_seconds: 0.20
+  timeout_seconds: 20
+  max_synonyms: 25
+  properties:
+    - MolecularFormula
+    - MolecularWeight
+    - CanonicalSMILES
+    - IsomericSMILES
+    - InChI
+    - InChIKey
+    - IUPACName
+    - XLogP
+    - TPSA
+
+classyfire:
+  enabled: true
+  # Wishart Lab returns HTTP 429 if pinged faster than ~1 req/sec.
+  # 1.5s + exponential backoff on 429 keeps the request stream stable.
+  rate_limit_seconds: 1.5
+  timeout_seconds: 30
+  max_retries: 4
+  backoff_base_seconds: 4.0
+  # When true, only rows whose carcinogen_class_normalized would be
+  # "Unknown" are upgraded with the ChemOnt class. Set to false to
+  # always prefer the ChemOnt-derived bucket over the regex one.
+  upgrade_unknown_only: true
+
+quality:
+  required_identifier_any:
+    - pubchem_cid
+    - inchikey
+    - casrn
+    - iarc_casrn
+    - dtxsid
+    - chebi_id
+  controlled_iarc_groups:
+    - Group 1
+    - Group 2A
+    - Group 2B
+    - Group 3
+    - Not classified
+
+classification:
+  preserve_seed_class: true
+  infer_when_missing: true
