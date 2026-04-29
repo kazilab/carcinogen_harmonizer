@@ -115,6 +115,13 @@ def is_endogenous(label: str, iarc: str) -> bool:
     return any(k in text for k in ["endogenous", "malondialdehyde", "hydroxynonenal", "4-hne"])
 
 
+def _coerce_chemical_like(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    text = str(value or "").strip().lower()
+    return text not in {"false", "0", "no"}
+
+
 def search_name(row: pd.Series) -> str:
     node_id = clean_text(row.get("node_id", "")).strip()
     label = clean_text(row.get("display_label", row.get("node_label", ""))).strip()
@@ -163,6 +170,7 @@ def normalize_seed(df: pd.DataFrame) -> pd.DataFrame:
     out["agent_entity_type"] = out["agent_entity_type"].replace("", "Chemical")
     if "is_chemical_like" not in out.columns:
         out["is_chemical_like"] = True
+    out["is_chemical_like"] = out["is_chemical_like"].map(_coerce_chemical_like)
     out["mixture_or_exposure_flag"] = out.apply(
         lambda r: is_mixture_or_exposure(r["display_label"], r["iarc"], r.get("agent_entity_type", "")), axis=1
     )

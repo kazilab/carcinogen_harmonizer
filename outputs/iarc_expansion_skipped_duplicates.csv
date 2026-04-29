@@ -1,0 +1,11 @@
+iarc_agent_name,node_id,reason,matched_keys
+4-Aminobiphenyl,IARC_4_Aminobiphenyl,already_present_in_seed,4 aminobiphenyl
+Acetaldehyde associated with consumption of alcoholic beverages,IARC_Acetaldehyde_associated_with_consumption_of_alcoholic_beverages,already_present_in_seed,cas:75-07-0
+"Aristolochic acid, plants containing",IARC_Aristolochic_acid_plants_containing,already_present_in_seed,cas:313-67-7
+"Carbon nanotubes, multiwalled, other than MWCNT-7",IARC_Carbon_nanotubes_multiwalled_other_than_MWCNT_7,already_present_in_seed,cas:308068-56-6
+"Carbon nanotubes, single-walled",IARC_Carbon_nanotubes_single_walled,already_present_in_seed,cas:308068-56-6
+Cobalt metal (without tungsten carbide or other metal alloys),IARC_Cobalt_metal_without_tungsten_carbide_or_other_metal_alloys,already_present_in_seed,cas:7440-48-4
+Etoposide in combination with cisplatin and bleomycin,IARC_Etoposide_in_combination_with_cisplatin_and_bleomycin,already_present_in_seed,cas:33419-42-0
+Fumonisin B1,IARC_Fumonisin_B1,already_present_in_seed,cas:116355-83-0
+"Palygorskite (Attapulgite)(short fibres, < 5 micrometres)",IARC_Palygorskite_Attapulgite_short_fibres_5_micrometres,already_present_in_seed,cas:12174-11-7;palygorskite
+Panfuran S (containing dihydroxymethylfuratrizine),IARC_Panfuran_S_containing_dihydroxymethylfuratrizine,already_present_in_seed,cas:794-93-4

@@ -124,9 +124,6 @@ def enrich_pubchem(df: pd.DataFrame, cfg: PipelineConfig, cache_dir: str | Path)
             if candidate_result.match_status in {"no_pubchem_match", "empty_query"}:
                 continue
             break
-        if result is None:
-            result = client.enrich_name("", properties=cfg.pubchem.properties, max_synonyms=cfg.pubchem.max_synonyms)
-            used_query = ""
         rec = result.to_record()
         out_rec = {
             out: _format_pubchem_value(rec.get(src, ""))

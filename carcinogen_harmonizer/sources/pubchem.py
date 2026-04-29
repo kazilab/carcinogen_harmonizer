@@ -4,6 +4,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
+import hashlib
 import json
 import re
 import time
@@ -135,7 +136,10 @@ class PubChemClient:
         return resp.json()
 
     def _cache_path(self, name: str) -> Path:
-        safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", name).strip("_")[:120] or "empty"
+        safe = re.sub(r"[^A-Za-z0-9_.-]+", "_", name).strip("_") or "empty"
+        if len(safe) > 120:
+            digest = hashlib.sha1(name.encode("utf-8")).hexdigest()[:12]
+            safe = f"{safe[:107]}_{digest}"
         return self.cache_dir / f"{safe}.json"
 
     def _write_cache(self, path: Path, result: PubChemResult) -> None:
@@ -145,13 +149,8 @@ class PubChemClient:
 def pick_casrn(synonyms: list[str] | None) -> str:
     if not synonyms:
         return ""
-    candidates = []
     for syn in synonyms:
-        candidates.extend(CAS_RE.findall(str(syn)))
-    # Prefer the first distinct CAS-like synonym returned by PubChem.
-    seen = set()
-    for cas in candidates:
-        if cas not in seen:
-            seen.add(cas)
-            return cas
+        match = CAS_RE.search(str(syn))
+        if match:
+            return match.group(0)
     return ""

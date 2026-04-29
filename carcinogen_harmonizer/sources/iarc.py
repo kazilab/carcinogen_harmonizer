@@ -285,11 +285,41 @@ _IARC_KEY_RE = re.compile(
 
 
 def _iarc_js_to_json(js_text: str) -> str:
-    """Convert the JS object-literal subset used by IARC loc.app.js to JSON."""
-    text = _IARC_KEY_RE.sub(r'"\1":', js_text)
-    text = re.sub(r"(?<![A-Za-z0-9_])!0(?![A-Za-z0-9_])", "true", text)
-    text = re.sub(r"(?<![A-Za-z0-9_])!1(?![A-Za-z0-9_])", "false", text)
-    return _normalize_js_strings(text)
+    """Convert the JS object-literal subset used by IARC loc.app.js to JSON.
+
+    String literals are normalized first so the key/bool substitutions only
+    rewrite source code outside of strings — otherwise an agent name
+    containing e.g. ``"name:"`` or ``"!0"`` would be corrupted.
+    """
+    text = _normalize_js_strings(js_text)
+    out: list[str] = []
+    i = 0
+    n = len(text)
+    while i < n:
+        ch = text[i]
+        if ch == '"':
+            j = i + 1
+            while j < n:
+                if text[j] == "\\":
+                    j += 2
+                    continue
+                if text[j] == '"':
+                    j += 1
+                    break
+                j += 1
+            out.append(text[i:j])
+            i = j
+        else:
+            j = i
+            while j < n and text[j] != '"':
+                j += 1
+            segment = text[i:j]
+            segment = _IARC_KEY_RE.sub(r'"\1":', segment)
+            segment = re.sub(r"(?<![A-Za-z0-9_])!0(?![A-Za-z0-9_])", "true", segment)
+            segment = re.sub(r"(?<![A-Za-z0-9_])!1(?![A-Za-z0-9_])", "false", segment)
+            out.append(segment)
+            i = j
+    return "".join(out)
 
 
 def _normalize_js_strings(text: str) -> str:
@@ -363,7 +393,7 @@ def _read_iarc_url(url: str, timeout: int = 30) -> pd.DataFrame:
     link_df = _read_iarc_download_links(response.text, base_url=url, timeout=timeout)
     if link_df is not None and not link_df.empty:
         return link_df
-    if "Loading" in response.text and "wpDataTables" in response.text or "List of Classifications" in response.text:
+    if "Loading" in response.text and "wpDataTables" in response.text:
         raise RuntimeError(
             "The current IARC classifications table is rendered with browser-side JavaScript. "
             "Could not auto-download a tabular export from the page. "
